@@ -22,6 +22,11 @@ const getPokemons = async (
   return pokemons;
 };
 
+export const metadata = {
+  title: "Pokemon List",
+  description: "Pokemon List page description",
+};
+
 export default async function PokemonsPage() {
   const pokemons = await getPokemons(150);
   return (
