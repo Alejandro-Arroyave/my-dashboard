@@ -1,6 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import { IoBrowsersOutline, IoCalculator, IoLogoReact } from "react-icons/io5";
+import {
+  IoBrowsersOutline,
+  IoCalculator,
+  IoHeartCircleOutline,
+  IoLogoReact,
+  IoTabletLandscape,
+} from "react-icons/io5";
 import SidebarMenuItem from "./SidebarMenuItem";
 
 export const Sidebar = () => {
@@ -19,9 +25,15 @@ export const Sidebar = () => {
     },
     {
       path: "/dashboard/pokemons",
-      icon: <IoBrowsersOutline size={40} />,
+      icon: <IoTabletLandscape size={40} />,
       title: "Pokemons",
-      subtitle: "List of pokemons estatics",
+      subtitle: "List of pokemons static",
+    },
+    {
+      path: "/dashboard/favorites",
+      icon: <IoHeartCircleOutline size={40} />,
+      title: "Favorites",
+      subtitle: "List of favorite pokemons",
     },
   ];
   return (
