@@ -1,5 +1,6 @@
 // Components
 export { PokemonGrid } from "./components/PokemonGrid";
+export { FavoritesGrid } from "./components/FavoritesGrid";
 
 // Types
 export type { SimplePokemon } from "./interfaces/simple-pokemon";
